@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/>
+	<link href="css/bootstrap.css" rel="stylesheet" />
+	<link href="css/rotating-card.css" rel="stylesheet" />
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+
+	<head>
+		<link rel="stylesheet" href="css/styles.css">
+		<script src="headerScroll.js"></script>
+		<title>My github page.</title>
+	</head>
+	<header>
+		<nav>
+            <ul>
+	        	<li><a class="active" href="#about">About</a></li>
+	            <li><a href="#internships">Internships</a></li>
+        		<li><a href="#projects">Projects</a></li>
+        		<li><a href="#blog">Blog</a></li>
+        		<li><a href="aparna_resume.pdf">Resume</a></li>
+        		<li><a href="#connect">Connect</a></li>
+            </ul>
+        </nav><!-- /.navbar -->
+
+	</header>
+
+	<body>
+		<div class="sections">
+			<section id="about">
+				<h2 class="section-header"><span>ABOUT</span></h2>
+				<div class="img-with-text">
+					<img src="images/aparna1.png"></img>
+				    <h1>Hi there, I'm Aparna PL!</h1>
+					<p class="normal">I'm a final year Information Technology undergraduate student at <a href="www.nitk.ac.in">NITK, Surathkal.</a>This webpage talks about my various projets carried out as part of my undergraduate course and internships. I like reading about Computer vision, image processing and databases. I like listening to music and singing. I paint sometimes. I usually watch stand-up bits during my free time.</p>
+				</div>
+			</section>
+
+			<section id="internships">
+				<h2 class="section-header"><span>EXPERIENCE</span></h2>
+				<h3 style="text-align: left;">SDE Intern, Amazon Development Center, Hyderabad</h3>
+				<div class="img-with-text" style="margin-top: 30px;">
+					<p class="normal" style="text-align: left;">
+						<img src="images/amazon_logo.png"></img>
+						<h3>May-December 2017</h3>
+						<div class="normal">
+						Worked on Feed Classification Service to improve product classification precision by leveraging the classification of similar products within a seller uploaded file(feed) containing product details. Signals such as text coherence, spatial coherence etc were used to cluster similar products together and improve precision of outlier products for which item classifier may have low confidence score. Offered pre-placement offer for the work carried out.
+						</div>
+					</p>
+				</div>
+
+				<h3 style="text-align: left; margin-top: 50px">Research Intern, <a href="https://www.iist.ac.in/">Indian Institute of Space Science and Technology</a>, Thiruvananthapuram</h3>
+				<div class="img-with-text" style="margin-top: 30px;">
+					<p class="normal" style="text-align: left;">
+						<a href="https://www.iist.ac.in/">
+						<img src="images/iist.jpeg" style="float: right;"></img>
+						</a>	
+						<h3>May-July 2016</h3>
+						<div class="normal">
+						Implemented a variation of Non-Local Means filter by incorporating maximum likelihood based weights to denoise Digital holographic interferometric fringes which helps in better phase estimation. Experimented several variations of Non-Local Means Filter and tried them on synthetically generated noise and Synthetic Aperture Radar(SAR) images. Compared the methods based on several metrics such as RMSE, SNR, ENL. Language used: MATLAB
+						</div>
+					</p>
+				</div>
+			</section>
+
+			<section id="projects">
+				<h2 class="section-header"><span>PROJECTS</span></h2>
+				<div class="wrapper">
+					<div class="flip-container" ontouchstart="this.classList.toggle('hover');" id="card1">
+						<div class="flipper">
+							<div class="front">
+								<!-- front content -->
+								<img src="images/lda_output.png"></img>
+								<h4>Topic Modelling for Content Based Image Retrieval</h4>
+							</div>
+							<div class="back">
+								<!-- back content -->
+								<p>Topics were extracted from images using statistical inference process of Latent Dirichlet Allocation. The topic distributions of images obtained were compared with the query image using Eucledian distance and Cosine similarity to rank and display the most relevant images to the user.</p>
+								<h5 align="center"><a href="https://github.com/lapa19/CBIR">Code</a></h5>
+							</div>
+						</div>
+					</div>
+					<div class="flip-container" ontouchstart="this.classList.toggle('hover');" id="card2">
+						<div class="flipper">
+							<div class="front">
+								<!-- front content -->
+								<img src="images/medical_output.png"></img>
+								<h4>Dictionary Learning for Content Based Medical Image Retrieval</h4>
+							</div>
+							<div class="back">
+								<!-- back content -->
+								<p>An application developed in Python to retrieve similar X-ray images to the input query using clustering. Dictionary for each cluster was learnt using K-SVD, sparse coding for each image was obtained using Orthogonal Matching Pursuit and images were clustered using the idea that similar images have decomposition in terms of similar dictionary atoms.</p>
+								<h5 align="center"><a href="https://github.com/lapa19/CBIR">Code</a></h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="flip-container" ontouchstart="this.classList.toggle('hover');" id="card3">
+						<div class="flipper">
+							<div class="front">
+								<!-- front content -->
+								<img src="images/svv_output.png"></img>
+								<h4>Search Engine Vector Voting (SVV)</h4>
+							</div>
+							<div class="back">
+								<!-- back content -->
+								<p>A meta-search engine developed with Python, HTML, PHP, JavaScript to get search results from 4 search engines using BeautifulSoup library for a given query and present the results to the user along with their relevance and vote distribution across the search engines.</p>
+								<h5 align="center"><a href="https://github.com/lapa19/svv">Code</a></h5>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="wrapper">
+					<div class="flip-container" ontouchstart="this.classList.toggle('hover');" id="card1">
+						<div class="flipper">
+							<div class="front">
+								<!-- front content -->
+								<img src="images/proc_output.png"></img>
+								<h4>Tracking in public procurement system</h4>
+							</div>
+							<div class="back">
+								<!-- back content -->
+								<p>Public procurement involves inter departmental file movement and  multiple approvals involved. In view to improve overall procurement cycle, a web application to track status of a procurement order placed by a user group was developed. Database was created with MySQL and normalized upto 3NF. Front-end was designed using HTML, CSS, JavaScript, PHP.</p>
+								<h5 align="center"><a href="https://github.com/lapa19/procurement-tracking-system">Code</a></h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="flip-container" ontouchstart="this.classList.toggle('hover');" id="card2">
+						<div class="flipper">
+							<div class="front">
+								<!-- front content -->
+								<img src="images/parallel_output.png"></img>
+								<h4>Parallelizing image processing algorithms</h4>
+							</div>
+							<div class="back">
+								<!-- back content -->
+								<p>Parallelized Otsu's segmentation algorithm, Sobel's edge detection algorithm and Gaussian blurring in Python using PyMP. Compared speedup performance after parallelizing in C (using OpenMP) and Python (using PyMP).</p>
+								<h5 align="center"><a href="https://github.com/lapa19/parallel-image-processing-algorithms">Code</a></h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="flip-container" ontouchstart="this.classList.toggle('hover');" id="card3">
+						<div class="flipper">
+							<div class="front">
+								<!-- front content -->
+								<img src="images/opencv.png"></img>
+								<h4>Image Search</h4>
+							</div>
+							<div class="back">
+								<!-- back content -->
+								<p>An application developed in Python with OpenCV's Python interface to search from the database and display similar images to the one input by user. SIFT key point matching algorithm was used for similarity detection between images.</p>
+								<h5 align="center"><a href="https://github.com/lapa19/Image-Annotation">Code</a></h5>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="connect">
+				<footer class="footer">
+					<h2 class="section-header"><span>CONNECT WITH ME</span></h2>
+					<div class="icons">
+					    <a href="#"><i class="fa fa-facebook" width="20px"></i></a>
+					    <a href="#"><i class="fa fa-linkedin"></i></a>
+					    <a href="#"><i class="fa fa-google-plus"></i></a>
+					</div>
+				</footer>			
+			</section>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,180 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+ 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.normal {
+  line-height: 30px;
+  font-size: 18px;
+}
+ 
+/* Navigation */
+ 
+nav {
+  width: 100%;
+  height: 60px; 
+  position: fixed; 
+  top: 0;
+  background: #1ABC9C;
+}
+ 
+nav ul {
+  padding: 20px;
+  margin: 0 auto;
+  list-style: none;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+nav ul li a {
+  padding: 10px 0;
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+nav ul li a:hover {
+  color: #34495E;
+}
+a.active {
+  border-bottom: 2px solid #ecf0f1;
+}
+ 
+/* Headings */
+ 
+h1 {
+  font-size: 5rem;
+  color: #34495E;
+}
+
+h2 {
+   width: 100%; 
+   text-align: center; 
+   border-bottom: 1px solid #000; 
+   line-height: 0.1em;
+   margin: 10px 0 20px; 
+} 
+
+h2 span { 
+    background:#fff; 
+    padding:0 10px; 
+}
+ 
+/* Sections */
+ 
+section {
+  width: 100%;
+  padding: 25px;
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+  float: left;
+}
+.section-header {
+  margin-bottom: 50px;
+}
+section:nth-child(even) {
+  background: #ecf0f1;
+}
+section:nth-child(odd) {
+  background: #bdc3c7;
+}
+p.description {
+  border-radius: 25px;
+  background-color:#cccccc;
+}
+.sections section:first-child {
+  margin-top: 60px;
+}
+.img-with-text img {
+   float: left;
+   padding: 0 20px 20px 0;
+}
+
+/* entire container, keeps perspective */
+.flip-container {
+  margin-top: 20px;
+  perspective: 1000px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 25px;
+  background-color: #fff;
+  text-align: center;
+  width: 300px;
+  height: 300px;
+}
+/* flip the pane when hovered */
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+  transform: rotateY(180deg);
+}
+
+.front, .back {
+  width: 300px;
+  height: 300px;
+}
+
+#card1 {
+  float:left;
+  width:300px;
+  height:300px;
+  margin-left:80px;
+}
+#card2 {
+  float:left;
+  width:300px;
+  height:300px;
+  margin-left:80px;
+}
+#card3 {
+  float:left;
+  width:300px;
+  height:300px;
+  margin-left:80px;
+}
+
+/* flip speed goes here */
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+  backface-visibility: hidden;
+  vertical-align: middle;
+  position: absolute;
+  padding: 20px 20px 20px 20px;
+}
+
+/* front pane, placed above back */
+.front {
+  z-index: 2;
+  /* for firefox 31 */
+  transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+  transform: rotateY(180deg);
+  text-align: justify;
+}
+
+.fa { 
+  transform: scale(3,3); 
+  margin-left: 80px;
+  margin-top: 30px;
+}
+.icons {
+  width: 100%;
+  text-align: center;
+}
+section.active {}
