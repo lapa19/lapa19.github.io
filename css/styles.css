@@ -1,10 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
  
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
  
 body {
   font-family: 'Open Sans', sans-serif;
@@ -14,40 +10,54 @@ body {
   line-height: 30px;
   font-size: 18px;
 }
+
+header {
+  padding-bottom: 70px;
+}
+ 
+body {
+  font-family: 'Open Sans', sans-serif;
+}
  
 /* Navigation */
- 
-nav {
-  width: 100%;
-  height: 60px; 
-  position: fixed; 
-  top: 0;
-  background: #1ABC9C;
+.menu {
+    width: 100%;
+    height: 75px;
+    background-color: rgba(0, 0, 0, 1);
+    position: fixed;
+    background-color: #00CED1;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    z-index: 9999;
 }
- 
-nav ul {
-  padding: 20px;
-  margin: 0 auto;
-  list-style: none;
-  text-align: center;
+#menu-center {
+    width: 980px;
+    height: 75px;
+    margin: 0 auto;
 }
-nav ul li {
-  display: inline-block;
-  margin: 0 10px;
+#menu-center ul {
+    margin: 15px 0 0 0;
 }
-nav ul li a {
-  padding: 10px 0;
-  color: #fff;
-  font-size: 1rem;
-  text-decoration: none;
-  font-weight: bold;
-  transition: all 0.2s ease;
+#menu-center ul li {
+    list-style: none;
+    margin: 0 30px 0 0;
+    display: inline;
 }
-nav ul li a:hover {
-  color: #34495E;
+.active {
+    font-family:'Droid Sans', serif;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    line-height: 50px;
 }
-a.active {
-  border-bottom: 2px solid #ecf0f1;
+ul li a {
+    font-family:'Droid Sans', serif;
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    line-height: 50px;
 }
  
 /* Headings */
@@ -64,11 +74,6 @@ h2 {
    line-height: 0.1em;
    margin: 10px 0 20px; 
 } 
-
-h2 span { 
-    background:#fff; 
-    padding:0 10px; 
-}
  
 /* Sections */
  
@@ -79,8 +84,65 @@ section {
   border-bottom: 1px solid #ccc;
   float: left;
 }
-.section-header {
-  margin-bottom: 50px;
+
+.wrapper {
+  overflow: auto;
+}
+
+.about-me-header {
+  display: table;
+  width: 100%;
+  background:linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0, 0.7)), url("about.jpg");  
+  justify-content: center;
+    /* Set a specific height */
+  min-height: 300px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.experience-header {
+  display: table;
+  margin-top: 50px;
+  width: 100%;
+  background:linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0, 0.7)), url("internships.jpg");  
+  justify-content: center;
+    /* Set a specific height */
+  min-height: 300px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.projects-header {
+  display: table;
+  margin-top: 50px;
+  width: 100%;
+  background:linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0, 0.7)), url("projects.jpg");  
+  justify-content: center;
+    /* Set a specific height */
+  min-height: 300px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.social-header {
+  display: table;
+  margin-top: 50px;
+  width: 100%;
+  background:linear-gradient(rgba(0,0,0, 0.85), rgba(0,0,0, 0.85)), url("social.jpg");  
+  justify-content: center;
+    /* Set a specific height */
+  min-height: 300px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 section:nth-child(even) {
   background: #ecf0f1;
@@ -92,12 +154,35 @@ p.description {
   border-radius: 25px;
   background-color:#cccccc;
 }
+.section-content {
+  padding: 25px;
+}
+.section {
+  height: auto;
+}
 .sections section:first-child {
   margin-top: 60px;
 }
 .img-with-text img {
    float: left;
    padding: 0 20px 20px 0;
+}
+.parallax {
+    /* Set a specific height */
+    min-height: 300px;
+    justify-content:center;
+    align-items:center;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about-me {
+  background:linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0, 0.7)), url("about.jpg");  
+}
+.experience {
+  background:linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0, 0.7)), url("internships.jpg");    
 }
 
 /* entire container, keeps perspective */
@@ -114,11 +199,6 @@ p.description {
 /* flip the pane when hovered */
 .flip-container:hover .flipper, .flip-container.hover .flipper {
   transform: rotateY(180deg);
-}
-
-.front, .back {
-  width: 300px;
-  height: 300px;
 }
 
 #card1 {
@@ -149,6 +229,8 @@ p.description {
 
 /* hide back of pane during swap */
 .front, .back {
+  width: 300px;
+  height: 300px;
   backface-visibility: hidden;
   vertical-align: middle;
   position: absolute;
@@ -175,6 +257,22 @@ p.description {
 }
 .icons {
   width: 100%;
+  float: left;
+  clear: left;
   text-align: center;
 }
+.centered {
+  width: 100%; /*can be in percentage also.*/
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  font-family: 'Pacifico', cursive;
+  font-size: 32px;
+  color: #fff;
+  float: left;
+  padding-top: 100px;
+}
+
 section.active {}
