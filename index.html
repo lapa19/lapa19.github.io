@@ -3,42 +3,46 @@
 <html>
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/>
-	<link href="css/bootstrap.css" rel="stylesheet" />
-	<link href="css/rotating-card.css" rel="stylesheet" />
-	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+	<link href="https://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 
 	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="js/headerScroll.js"></script>
 		<link rel="stylesheet" href="css/styles.css">
-		<script src="headerScroll.js"></script>
-		<title>My github page.</title>
+		<title>My github page</title>
+		<link rel="shortcut icon" href="images/favicon.ico" />
 	</head>
 	<header>
-		<nav>
+		<div class="m1 menu">
+		    <div id="menu-center">
             <ul>
 	        	<li><a class="active" href="#about">About</a></li>
 	            <li><a href="#internships">Internships</a></li>
         		<li><a href="#projects">Projects</a></li>
+        		<li><a href="#connect">Connect</a></li>
         		<li><a href="#blog">Blog</a></li>
         		<li><a href="aparna_resume.pdf">Resume</a></li>
-        		<li><a href="#connect">Connect</a></li>
             </ul>
-        </nav><!-- /.navbar -->
+        	</div><!-- /.navbar -->
+        </div>
 
 	</header>
 
 	<body>
 		<div class="sections">
-			<section id="about">
-				<h2 class="section-header"><span>ABOUT</span></h2>
-				<div class="img-with-text">
+			<div id="about" class="section">
+				<div class="about-me-header"><div class="centered">ABOUT ME</div></div>
+				<div class="img-with-text section-content">
 					<img src="images/aparna1.png"></img>
 				    <h1>Hi there, I'm Aparna PL!</h1>
 					<p class="normal">I'm a final year Information Technology undergraduate student at <a href="www.nitk.ac.in">NITK, Surathkal.</a>This webpage talks about my various projets carried out as part of my undergraduate course and internships. I like reading about Computer vision, image processing and databases. I like listening to music and singing. I paint sometimes. I usually watch stand-up bits during my free time.</p>
 				</div>
-			</section>
+			</div>
 
-			<section id="internships">
-				<h2 class="section-header"><span>EXPERIENCE</span></h2>
+			<div id="internships" class="section">
+				<div class="experience-header"><div class="centered">EXPERIENCE</div></div>
+				<div class="section-content">
 				<h3 style="text-align: left;">SDE Intern, Amazon Development Center, Hyderabad</h3>
 				<div class="img-with-text" style="margin-top: 30px;">
 					<p class="normal" style="text-align: left;">
@@ -51,7 +55,7 @@
 				</div>
 
 				<h3 style="text-align: left; margin-top: 50px">Research Intern, <a href="https://www.iist.ac.in/">Indian Institute of Space Science and Technology</a>, Thiruvananthapuram</h3>
-				<div class="img-with-text" style="margin-top: 30px;">
+				<div class="img-with-text " style="margin-top: 30px;">
 					<p class="normal" style="text-align: left;">
 						<a href="https://www.iist.ac.in/">
 						<img src="images/iist.jpeg" style="float: right;"></img>
@@ -62,11 +66,13 @@
 						</div>
 					</p>
 				</div>
-			</section>
+				</div>
+			</div>
 
-			<section id="projects">
-				<h2 class="section-header"><span>PROJECTS</span></h2>
+			<div id="projects" class="section">
+				<div class="projects-header"><div class="centered">PROJECTS</div></div>
 				<div class="wrapper">
+
 					<div class="flip-container" ontouchstart="this.classList.toggle('hover');" id="card1">
 						<div class="flipper">
 							<div class="front">
@@ -81,6 +87,7 @@
 							</div>
 						</div>
 					</div>
+
 					<div class="flip-container" ontouchstart="this.classList.toggle('hover');" id="card2">
 						<div class="flipper">
 							<div class="front">
@@ -110,9 +117,7 @@
 							</div>
 						</div>
 					</div>
-				</div>
 
-				<div class="wrapper">
 					<div class="flip-container" ontouchstart="this.classList.toggle('hover');" id="card1">
 						<div class="flipper">
 							<div class="front">
@@ -157,19 +162,48 @@
 							</div>
 						</div>
 					</div>
-				</div>
-			</section>
 
-			<section id="connect">
-				<footer class="footer">
-					<h2 class="section-header"><span>CONNECT WITH ME</span></h2>
-					<div class="icons">
-					    <a href="#"><i class="fa fa-facebook" width="20px"></i></a>
-					    <a href="#"><i class="fa fa-linkedin"></i></a>
-					    <a href="#"><i class="fa fa-google-plus"></i></a>
+					<div class="flip-container" ontouchstart="this.classList.toggle('hover');" id="card1">
+						<div class="flipper">
+							<div class="front">
+								<!-- front content -->
+								<img src="images/hotel.jpeg"></img>
+								<h4>Hotel Management System</h4>
+							</div>
+							<div class="back">
+								<!-- back content -->
+								<p>Java based GUI application for booking rooms in a group of hotels. Files were used as back-end to store user details. All major OO concepts were implemented. Java Swing was used for GUI components.</p>
+								<h5 align="center"><a href="https://github.com/lapa19/Hotel-Management-system">Code</a></h5>
+							</div>
+						</div>
 					</div>
-				</footer>			
-			</section>
+
+					<div class="flip-container" ontouchstart="this.classList.toggle('hover');" id="card2">
+						<div class="flipper">
+							<div class="front">
+								<!-- front content -->
+								<img src="images/django.png"></img>
+								<h4>Student Teacher Portal</h4>
+							</div>
+							<div class="back">
+								<!-- back content -->
+								<p>A student-teacher portal developed in Django. Student can log-in and view deadlines, his marks scored and provide feedback to teacher. Teacher can log-in and post announcements and provide student feedback.</p>
+								<h5 align="center"><a href="https://github.com/lapa19/Student-Teacher-Portal">Code</a></h5>
+							</div>
+						</div>
+					</div>
+			</div>
+
+			<div id="connect" class="section">
+				<div class="social-header">
+					<div class="centered">CONNECT WITH ME</div>
+					<div class="icons">
+					    <a href="https://github.com/lapa19/"><i class="fa fa-github" width="20px"></i></a>
+					    <a href="https://www.linkedin.com/in/aparna-p-43864ba1/"><i class="fa fa-linkedin"></i></a>
+					    <a href="mailto:aparnapl99@gmail.com"><i class="fa fa-envelope"></i></a>
+					</div>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>
