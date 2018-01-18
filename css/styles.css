@@ -1,7 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
  
-
- 
 body {
   font-family: 'Open Sans', sans-serif;
 }
@@ -13,10 +11,6 @@ body {
 
 header {
   padding-bottom: 70px;
-}
- 
-body {
-  font-family: 'Open Sans', sans-serif;
 }
  
 /* Navigation */
@@ -32,19 +26,23 @@ body {
     transition: all 0.3s ease;
     z-index: 9999;
 }
+
 #menu-center {
     width: 980px;
     height: 75px;
     margin: 0 auto;
 }
+
 #menu-center ul {
     margin: 15px 0 0 0;
 }
+
 #menu-center ul li {
     list-style: none;
     margin: 0 30px 0 0;
     display: inline;
 }
+
 .active {
     font-family:'Droid Sans', serif;
     font-size: 14px;
@@ -52,6 +50,7 @@ body {
     text-decoration: none;
     line-height: 50px;
 }
+
 ul li a {
     font-family:'Droid Sans', serif;
     font-size: 14px;
@@ -61,7 +60,6 @@ ul li a {
 }
  
 /* Headings */
- 
 h1 {
   font-size: 5rem;
   color: #34495E;
@@ -94,7 +92,7 @@ section {
   width: 100%;
   background:linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0, 0.7)), url("about.jpg");  
   justify-content: center;
-    /* Set a specific height */
+  /* Set a specific height */
   min-height: 300px;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -102,13 +100,14 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .experience-header {
   display: table;
   margin-top: 50px;
   width: 100%;
   background:linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0, 0.7)), url("internships.jpg");  
   justify-content: center;
-    /* Set a specific height */
+  /* Set a specific height */
   min-height: 300px;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -116,13 +115,14 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .projects-header {
   display: table;
   margin-top: 50px;
   width: 100%;
   background:linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0, 0.7)), url("projects.jpg");  
   justify-content: center;
-    /* Set a specific height */
+  /* Set a specific height */
   min-height: 300px;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -130,13 +130,14 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .social-header {
   display: table;
   margin-top: 50px;
   width: 100%;
   background:linear-gradient(rgba(0,0,0, 0.85), rgba(0,0,0, 0.85)), url("social.jpg");  
   justify-content: center;
-    /* Set a specific height */
+  /* Set a specific height */
   min-height: 300px;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -144,40 +145,21 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
 }
-section:nth-child(even) {
-  background: #ecf0f1;
-}
-section:nth-child(odd) {
-  background: #bdc3c7;
-}
+
 p.description {
   border-radius: 25px;
   background-color:#cccccc;
 }
+
 .section-content {
   padding: 25px;
 }
-.section {
-  height: auto;
-}
-.sections section:first-child {
-  margin-top: 60px;
-}
+
 .img-with-text img {
    float: left;
    padding: 0 20px 20px 0;
 }
-.parallax {
-    /* Set a specific height */
-    min-height: 300px;
-    justify-content:center;
-    align-items:center;
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
 .about-me {
   background:linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0, 0.7)), url("about.jpg");  
 }
@@ -196,24 +178,13 @@ p.description {
   width: 300px;
   height: 300px;
 }
+
 /* flip the pane when hovered */
 .flip-container:hover .flipper, .flip-container.hover .flipper {
   transform: rotateY(180deg);
 }
 
-#card1 {
-  float:left;
-  width:300px;
-  height:300px;
-  margin-left:80px;
-}
-#card2 {
-  float:left;
-  width:300px;
-  height:300px;
-  margin-left:80px;
-}
-#card3 {
+.card {
   float:left;
   width:300px;
   height:300px;
@@ -255,12 +226,14 @@ p.description {
   margin-left: 80px;
   margin-top: 30px;
 }
+
 .icons {
   width: 100%;
   float: left;
   clear: left;
   text-align: center;
 }
+
 .centered {
   width: 100%; /*can be in percentage also.*/
   height: auto;
